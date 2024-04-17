@@ -46,9 +46,9 @@ export const More = (props) => {
           <p>Created on : {contact ? contact.createdAt : "Not available"}</p>
           
         </div>
-        <div className='space-x-4 '>
+        <div className='space-x-4 z'>
           <button className='bg-black py-1 px-2 text-white'>Update</button>
-          <button className='bg-red-600 py-1 px-2 text-white'  onClick={() => deleteContact(contact._id)}>Delete</button>
+          <button className='bg-red-500 py-1 px-2 text-white'  onClick={() => deleteContact(contact._id)}>Delete</button>
         </div>
       </div>
     </div>

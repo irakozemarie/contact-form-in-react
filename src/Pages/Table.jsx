@@ -24,11 +24,10 @@ export const Table = () => {
     return (
         <div className='flex flex-col items-center'>
             <button className='bg-green-800 text-white font-bold py-1 px-2 mt-4 mb-4' ><Link to="/home">Add New</Link></button>
-            <table>
+            <table className='bg-slate-200'>
                 <thead>
                     <tr>
                         <th>Full Name</th>
-                        <th>Profile</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -39,13 +38,11 @@ export const Table = () => {
                                 <td>{contact.fullName}</td> 
                                 <td><img src="{contact.profile} " alt="" /></td>
                                 <td className='space-x-2'>
-                                    <button className='bg-blue-400 text-white font-bold py-1 px-2 mt-4'>
-                                        <Link to={`/details/${contact._id}`}>View</Link>
+                                    <button className=
+                                    " text-white font-bold py-1 px-2 mt-4 bg-black">
+                                        <Link to={`/details/${contact._id}`}>More Details</Link>
                                     </button>
                                     
-                                    <button className='bg-red-400 text-white font-bold py-1 px-2 mt-4'>
-                                        delete
-                                    </button>
                                 </td>
                             </tr>
                         }) : "No contacts found!"

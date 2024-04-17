@@ -47,11 +47,7 @@ export const Home = () => {
         <input type="text" placeholder='Enter your Phone number' className='w-96 h-12 border-2 pl-2'
           onChange={e => setPhone(e.target.value)}></input><br></br>
 
-        {/* <label for="Picture" className='mt-4'>Picture</label><br></br>
-        <div className='w-96 h-12 border-2 flex flex-row items-center space-x-2 mt-4 pl-2'>
-          <button className='bg-slate-200 py-1 px-2'>Choose File</button>
-          <p>No file choosen</p>
-        </div> */}
+      
         <button className='w-96 h-12 border-2 mt-4 bg-black text-white' onClick={addContact}>Create</button>
       </form>
 
