@@ -26,7 +26,7 @@ export const Table = () => {
             <button className='bg-green-800 text-white font-bold py-1 px-2 mt-4 mb-4' ><Link to="/home">Add New</Link></button>
             <table className='bg-slate-200'>
                 <thead>
-                    <tr>
+                    <tr className='flex gap-10'>
                         <th>Full Name</th>
                         <th>Action</th>
                     </tr>

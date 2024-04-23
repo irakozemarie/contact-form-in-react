@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 
 export const More = (props) => {
   const [contact, setContact] = useState()
-
+const navigate = useNavigate();
   let { contactId } = useParams();
 
   const fetchContact = (id) => {
@@ -47,7 +47,7 @@ export const More = (props) => {
           
         </div>
         <div className='space-x-4 z'>
-          <button className='bg-black py-1 px-2 text-white'>Update</button>
+         <button onClick={() => navigate(`/update/${contact._id}`)} className="py-3 px-6 bg-blue-500 text-white rounded-lg text-base hover:bg-blue-600 transition duration-300">Update</button>
           <button className='bg-red-500 py-1 px-2 text-white'  onClick={() => deleteContact(contact._id)}>Delete</button>
         </div>
       </div>
